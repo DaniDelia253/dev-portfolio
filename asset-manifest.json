@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/danidavis-portfolio/static/css/main.e1f1a94e.css",
+    "main.js": "/danidavis-portfolio/static/js/main.d7678638.js",
+    "static/js/787.1ed0c42c.chunk.js": "/danidavis-portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/bg.jpeg": "/danidavis-portfolio/static/media/bg.8001897631a33e12018b.jpeg",
+    "index.html": "/danidavis-portfolio/index.html",
+    "main.e1f1a94e.css.map": "/danidavis-portfolio/static/css/main.e1f1a94e.css.map",
+    "main.d7678638.js.map": "/danidavis-portfolio/static/js/main.d7678638.js.map",
+    "787.1ed0c42c.chunk.js.map": "/danidavis-portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1f1a94e.css",
+    "static/js/main.d7678638.js"
+  ]
+}
