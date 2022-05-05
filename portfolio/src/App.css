@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-yellow: rgba(255, 191, 75, 1);
+  --main-orange: rgba(255, 151, 95, 1);
+  --main-red: rgba(255, 103, 84, 1);
+  --grey-text: rgb(80, 80, 80);
+  --bg-color: rgba(255, 255, 255, 0.699);
+}
+
+body {
+  --accent-font: "Montagu Slab", serif;
+  --light-font: "Neuton", serif;
+  --main-font: "Vidaloka", serif;
+}
+
+.accentFont {
+  font-family: var(--accent-font);
+}
+
+.lightFont {
+  font-family: var(--light-font);
+}
+
+.mainFont {
+  font-family: var(--main-font);
+}
+
+.app {
+  background-image: url(../public/bg.jpeg);
+  z-index: -1;
+  width: 100%;
+  background-size: 100%;
+}
+
+.navBar {
+  background-color: var(--bg-color);
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navBarBrand {
+  font-family: var(--accent-font);
+  font-size: 40px;
+  text-decoration: none;
+  color: var(--main-orange) !important;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.navBarLinkList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navBarLink {
+  font-family: var(--main-font);
+  font-size: 26px;
+  color: var(--main-orange) !important;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+#heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#heroImg {
+  max-height: 600px;
+}
+
+#heroText {
+  color: white;
+  font-family: var(--accent-font);
+  font-size: 90px;
+  font-weight: lighter;
+  justify-content: center;
+}
+
+.bodySection {
+  display: flex;
+  justify-content: center;
+}
+
+.bodyBox {
+  background-color: var(--bg-color);
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+#aboutTextContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+#aboutImg {
+  max-height: 250px;
+}
+
+#aboutText {
+  font-family: var(--main-font);
+  color: var(--main-orange);
+  font-size: 25px;
+  width: 70%;
+  text-align: justify;
+}
+
+.aboutIconsRow {
+  margin: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icon {
+  max-height: 90px;
+}
+
+.tip {
+  color: var(--main-yellow);
+  font-family: var(--accent-font);
+  font-size: 20px;
+}
+
+.sectionHeader {
+  text-align: center;
+  font-size: 40px;
+  font-family: var(--main-font);
+  color: var(--main-orange);
+}
+
+#workContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workImg {
+  /* max-height: 250px; */
+  width: 50%;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 15px 15px 5px whitesmoke;
+}
+
+.workImg:hover {
+  box-shadow: -15px -15px 5px whitesmoke;
+}
+
+.modalHeader {
+  color: white;
+  font-family: var(--main-font);
+}
+
+#modalHead {
+  background-image: url(../public/bg.jpeg);
+}
+
+.modalLink {
+  font-family: var(--main-font);
+  color: var(--main-red);
+  font-size: 18px;
+  text-decoration: none;
+  padding: 15px;
+  margin: 10px;
+}
+
+.linkContainer {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.modalLink:hover {
+  color: var(--main-red);
+}
+
+.contactRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactIcon {
+  margin: 10px;
+}
+
+.contactLink {
+  text-decoration: none;
+  font-family: var(--main-font);
+  color: var(--main-orange);
+  font-size: 25px;
+}
+
+.contactLink:hover {
+  color: var(--main-red);
+  font-size: 35px;
+}
+
+.footerText {
+  font-family: var(--accent-font);
+  font-size: 30px;
+  color: var(--main-orange) !important;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1050px) {
+  #heroText {
+    font-size: 70px;
+  }
+  #heroImg {
+    max-height: 500px;
+  }
+  #aboutText {
+    font-size: 22px;
+  }
+  .navBarBrand {
+    font-size: 34px;
+  }
+  .navBarLink {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #heroText {
+    font-size: 55px;
+  }
+  #heroImg {
+    max-height: 350px;
+  }
+  #aboutText {
+    font-size: 18px;
+    width: 70%;
+  }
+  #aboutImg {
+    max-height: 230px;
+  }
+  .navBarBrand {
+    font-size: 32px;
+  }
+  .navBarLink {
+    font-size: 20px;
+  }
+  .icon {
+    max-height: 80px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #heroText {
+    font-size: 45px;
+  }
+  #heroImg {
+    max-height: 200px;
+  }
+  #aboutText {
+    font-size: 15px;
+    width: 70%;
+  }
+  #aboutImg {
+    max-height: 150px;
+  }
+  .navBarBrand {
+    font-size: 25px;
+  }
+  .navBarLink {
+    font-size: 15px;
+  }
+  .icon {
+    max-height: 55px;
+    margin: 2px;
+  }
+  .workImg {
+    /* max-height: 250px; */
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #heroText {
+    font-size: 35px;
+  }
+  #heroImg {
+    max-height: 180px;
+  }
+  #aboutTextContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+  }
+
+  #aboutText {
+    font-size: 13px;
+    width: 90%;
+  }
+  #aboutImg {
+    max-height: 200px;
+  }
+  .navBar {
+    justify-content: center;
+  }
+  .navBarBrand {
+    font-size: 25px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .navBarLink {
+    font-size: 15px;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  .icon {
+    max-height: 45px;
+    margin: 2px;
+  }
+  .workImg {
+    /* max-height: 250px; */
+    width: 70%;
+  }
+  .contactLink {
+    text-decoration: none;
+    font-family: var(--main-font);
+    color: var(--main-orange);
+    font-size: 18px;
+  }
+
+  .contactLink:hover {
+    color: var(--main-red);
+    font-size: 25px;
+  }
+  .footerText {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #heroText {
+    font-size: 32px;
+  }
+  #heroImg {
+    max-height: 165px;
+  }
+  #aboutTextContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+  }
+  #aboutText {
+    font-size: 13px;
+    width: 90%;
+  }
+  #aboutImg {
+    max-height: 150px;
+  }
+  .navBar {
+    justify-content: center;
+  }
+  .navBarBrand {
+    font-size: 25px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .navBarLink {
+    font-size: 15px;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  .icon {
+    max-height: 40px;
+    margin: 2px;
+  }
+  .workImg {
+    /* max-height: 250px; */
+    width: 70%;
+  }
+}
